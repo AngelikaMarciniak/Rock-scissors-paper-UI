@@ -1,6 +1,7 @@
 # Rock scissors paper UI
 The repository contain an assignment for an Brainnest Course - Frontend development industry training.
 It is a game "Rock, paper, scissors" which you can play from a webside. 
+Link: https://angelikamarciniak.github.io/Rock-scissors-paper-UI/
 
 # Describtion:
 - In our UI, the player should be able to play the game by clicking on buttons.
@@ -9,7 +10,7 @@ It is a game "Rock, paper, scissors" which you can play from a webside.
 - A div for displaying results and all of console.logs made in DOM methods.
 - Display the running score, and announce a winner of the game.
 
-Link: https://angelikamarciniak.github.io/Rock-scissors-paper-UI/
+
 
 # Technologies:
 - Visual Studio Code
