@@ -3,11 +3,11 @@ The repository contain an assignment for an Brainnest Course - Frontend developm
 It is a game "Rock, paper, scissors" which you can play from a webside. 
 
 # Describtion:
--In our UI, the player should be able to play the game by clicking on buttons.
--Three buttons, one for each selection. Use an event listener to the buttons that call 
-your playRound function with the correct playerSelection every time a button is clicked. 
--A div for displaying results and all of console.logs made in DOM methods.
--Display the running score, and announce a winner of the game.
+- In our UI, the player should be able to play the game by clicking on buttons.
+- Three buttons, one for each selection. 
+- Use an event listener to the buttons that call your playRound function with the correct playerSelection every time a button is clicked. 
+- A div for displaying results and all of console.logs made in DOM methods.
+- Display the running score, and announce a winner of the game.
 
 Link: https://angelikamarciniak.github.io/Rock-scissors-paper-UI/
 
