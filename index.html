@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+  </head>
+  <body>
+    <main class="page">
+      <section class="page__header">
+        <h1>Rock, scissors, paper</h1>
+      </section>
+      <section class="page__moves">
+        <h3 class="page__moves-title">Choose your move</h3>
+        <div class="page__moves-icons wrapper">
+          <button class="icon" id="rock">
+            <span class="far fa-hand-rock"></span>
+          </button>
+          <button class="icon" id="scissors">
+            <span class="far fa-hand-scissors"></span>
+          </button>
+          <button class="icon" id="paper">
+            <span class="far fa-hand-paper"></span>
+          </button>
+        </div>
+      </section>
+      <section class="page__results none">
+        <div class="page__results-descriptiopn wrapper">
+          <h3>You</h3>
+          <h3>Computer</h3>
+        </div>
+        <div class="page__results-icons wrapper">
+          <span class="icon" id="players-move">Rock</span>
+          <span class="icon" id="computers-move">Paper</span>
+        </div>
+        <div class="page__results-subtitels">
+          <h2 id="result"></h2>
+          <button class="page__results-restart">Play again</button>
+        </div>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

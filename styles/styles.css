@@ -1,0 +1,157 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: wheat;
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  border: 0;
+  background-color: rgb(205, 160, 92);
+}
+
+.icon {
+  width: 120px;
+  height: 120px;
+  font-size: 50px;
+  border: 8px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.none {
+  display: none;
+}
+
+.page {
+  width: 50%;
+  margin: 80px auto;
+}
+
+.page__moves-title,
+.page__header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.page__header {
+  font-size: 24px;
+}
+
+.page__results-subtitels {
+  text-align: center;
+}
+
+.page__results-restart {
+  border: 3px solid black;
+  border-radius: 8px;
+  font-size: 22px;
+}
+
+.page__results-descriptiopn h3 {
+  text-align: center;
+  width: 100%;
+}
+
+.page__results-descriptiopn,
+.page__results-subtitels {
+  opacity: 0;
+  animation: fadeIn 0.4s linear;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+.page__results-icons {
+  position: relative;
+}
+
+.page__results-icons::after {
+  position: absolute;
+  content: "vs";
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  animation: counting 3s linear;
+}
+
+.page__results-icons .icon:first-child {
+  opacity: 0;
+  animation: slideLeft 0.4s ease-in;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.page__results-icons .icon:last-child {
+  opacity: 0;
+  animation: slideRigth 0.4s ease-in;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.page__moves-icons .icon,
+.page__results-restart {
+  transition: 0.3s;
+}
+
+.page__moves-icons .icon:hover,
+.page__results-restart:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-300%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRigth {
+  0% {
+    opacity: 0;
+    transform: translateX(300%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes counting {
+  0% {
+    content: "3";
+  }
+  33% {
+    content: "2";
+  }
+  66% {
+    content: "1";
+  }
+  100% {
+    content: "vs";
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
