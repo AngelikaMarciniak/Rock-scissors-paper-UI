@@ -20,6 +20,6 @@ Link: https://angelikamarciniak.github.io/Rock-scissors-paper-UI/
 - Java Script
 - CSS
 
-# Example of my turn
 
-![ex](https://user-images.githubusercontent.com/104442170/180058483-9792f515-138d-4420-8213-2ab3c882e813.png)
+# Example of my turn
+![ex](https://user-images.githubusercontent.com/104442170/181038441-a615d6a6-74ce-4de4-b35c-f8dbd50ce48e.png)
